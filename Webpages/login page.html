@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign-In to Register</title>
+    <link rel="icon" type="image/x-icon" href="Assets/download.jpeg">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        .header {
+            text-align: center;
+            background-image: url('Assets/rose2.jpg');
+            color: white;
+            padding-bottom: 30px;
+            padding-top: 15px;
+        }
+
+        .header h1 {
+            font-size: 40px;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a.right {
+            float: right;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+            background-image: url('Assets/black5.jpg');
+            
+        }
+
+        .login-form1 {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            padding: 70px;
+            padding-bottom: 20px;
+            border-radius: 8px;
+        }
+        .login-form2 {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            padding: 70px;
+            border-radius: 8px;
+        }
+
+        .login-form1 input[type="text"],
+        .login-form1 input[type="password"],
+        .login-form1 input[type="email"],
+        .login-form1 input[type="datetime"]  {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .login-form1 button {
+            width: 50%;
+            padding: 10px;
+            background-color: #1abc9c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .login-form2 input[type="text"],
+        .login-form2 input[type="password"],
+        .login-form2 input[type="email"],
+        .login-form2 input[type="datetime"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .login-form2 button {
+            width: 50%;
+            padding: 10px;
+            background-color: #1abc9c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #Preloader{
+            background: #ffffff url(Assets/loader1.gif) no-repeat center center;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+    <div id="Preloader"></div>
+    <div class="header">
+        <h1>Welcome back! Login to access the Busify -fast booking platform.</h1>
+        <p>Did you forget your password?</p>
+    </div>
+
+    <div class="navbar">
+        <a href="guidelines.html">Guide</a>
+        <a href="Faq.html">FAQ</a>
+        <a href="askquestions.html">Ask Questions</a>
+        <a href="askquestions.html">Give Feedback</a>
+        <a href="#">Follow Us</a>
+        <a href="file:///C:/Users/Priya%20rajeswari/Desktop/PN%20WEBSITE/HTML/index.html" class="right">About Developer</a>
+    </div>
+    </body>
+    <div class="content">
+        <div class="login-form1">
+            <h1>Traveler Log-In</h1>
+            <input type="text" placeholder="Traveler ID">
+            <input type="password" placeholder="Password">
+            <a href="realhome.html">
+                <button>CONTINUE</button></a>
+            <p>Don't have account ? :</p>
+            <a href="bus1.html">Sign-In</a>
+
+        </div>
+        <div><p>.</p></div>
+        <div class="login-form2">
+            <h1>Operator Log-In</h1>
+            <input type="text" placeholder="Operator ID">
+            <input type="text" placeholder="Enter Bus plate no:">
+            <input type="password" placeholder="Password">
+            <a href="realhome.html">
+                <button>CONTINUE</button></a>
+            <p>Already have account ? :</p>
+            <a href="bus1.html">Sign-In</a>
+
+        </div>
+    </div>
+    <script>
+        var loader = document.getElementById("Preloader");
+        
+        window.addEventListener("load", function() {
+          setTimeout(function() {
+            loader.style.display = "none";
+          }, 1000);
+        });
+        </script>
+        
+</body>
+</html>
