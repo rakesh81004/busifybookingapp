@@ -1,4 +1,7 @@
 # Busify - Online Bus Booking Platform
+Deployed Link :
+https://busify-onlinebookingplatform.netlify.app/
+
 1. QR Code Booking
 Busify simplifies the booking process by allowing users to book tickets through a unique QR code system. This ensures fast, secure, and convenient ticketing, eliminating the need for physical tickets and reducing the risk of errors.
 
